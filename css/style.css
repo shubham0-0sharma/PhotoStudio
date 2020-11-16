@@ -195,12 +195,12 @@ html {
 #home::before {
   content: "";
   position: absolute;
-  background: url("../img/bg.jpg") no-repeat center center/cover;
-  height: 115vh;
-  top: -165px;
+  background: url(../img/bg.jpg) no-repeat center center/cover;
+  height: 127vh;
+  top: -115px;
   width: 100%;
   z-index: -1;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 #home .h-primary {
@@ -218,7 +218,7 @@ html {
 #about {
   padding: 4rem;
   height: 100vh;
-  background-color: rgba(211, 207, 207, 0.591);
+  background-color: rgb(138 66 66 / 59%);
 }
 
 .h1-div {
@@ -233,6 +233,16 @@ html {
   margin-left: 5rem;
   box-shadow: 0.3rem 0.3rem 0.2rem 0.2rem rgb(0, 0, 0);
   padding: 2rem;
+  cursor: pointer;
+  
+}
+.about-div h3{
+  transition: all .5s;
+}
+.about-div h3:hover{
+ font-size: 2rem;
+ color: rgb(14, 42, 228);
+  
 }
 .about-div h3 {
   color: #000000;
@@ -286,16 +296,22 @@ html {
   border: 0px;
 }
 
-.work-img {
-  width: 30rem;
-  height: auto;
-}
 .work-img-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
 }
 
+.work-img {
+  width: 30rem;
+  height: auto;
+  transition: all .6s;
+  cursor: pointer;
+}
+.work-img:hover {
+  transform: scale(1.1);
+  border-radius: 1rem;
+}
 /* Contact Section */
 #contact {
   position: relative;
@@ -339,6 +355,9 @@ html {
   border-radius: 9px;
   font-weight: 700;
   margin-left: 45%;
+}
+.sub button:hover{
+  font-size: 1.4rem;
 }
 
 footer {
