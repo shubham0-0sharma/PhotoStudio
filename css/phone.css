@@ -53,8 +53,12 @@
   padding: 0;
   display: inline;
   margin: 0;
-  
 }
+.about-div h3:hover{
+  font-size: .8rem;
+  color: rgb(14, 42, 228);
+   
+ }
 
 /* Services section  */
 #services {
